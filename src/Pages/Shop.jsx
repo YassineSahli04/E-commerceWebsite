@@ -9,7 +9,7 @@ const Shop = () => {
   return (
     <div>
       
-      <Navbar/>
+      
       <Hero
         cName="hero"
         heroImg={HomeImg}
