@@ -1,0 +1,34 @@
+.similar-products {
+    margin-top: 20px;
+  }
+  
+  .similar-products h3 {
+    margin-bottom: 10px;
+    color: #171717;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .similar-products-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .similar-product-item {
+    width: calc(25% - 15px);
+    border: 1px solid #e3e3e3;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .similar-product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .similar-product-item p {
+    margin: 5px 0;
+  }
+  
