@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
   }
+
   
   .breadcrum-list {
     display: flex;
@@ -15,6 +16,14 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+  }
+
+  .breadcrum-list h1 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
   }
   
   .breadcrum-list li a {
