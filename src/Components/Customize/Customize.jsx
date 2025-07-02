@@ -1,11 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import { ShopContext } from '../../Context/ShopContext';
 import './Customize.css';
 
 const Customize = () => {
-  const { t } = useTranslation();
   const { all_product } = useContext(ShopContext);
   const { productId } = useParams();
   const product = all_product.find(product => product.id === parseInt(productId));
@@ -31,54 +29,54 @@ const Customize = () => {
   };
 
   if (!product) {
-    return <p>{t('no_product_found')}</p>;
+    return <p>No product found</p>;
   }
 
   return (
     <div className="customize-container" role="form" aria-labelledby="customize-title">
       <div className="product-display">
-        <h1 id="customize-title">{t('customize_title')}</h1>
+        <h1 id="customize-title">Customize title</h1>
         
       </div>
       <form className="customize-form" onSubmit={handleSubmit}>
         {(product.id === 1 || product.id === 2 || product.id === 3) && (
           <>
             <label className="input">
-              {t('choose_color_vase')}
+              Choose color_vase
               <input 
                 type="text"
                 name="color"
                 value={formData.color}
                 onChange={handleChange}
-                placeholder={t('placeholder_white')}
-                aria-label={t('choose_color_vase')}
+                placeholder={'Placeholder_white'}
+                aria-label={'Choose_color_vase'}
               />
             </label>
             <label className="input">
-              {t('choose_color_pattern')}
+              {'choose_color_pattern'}
               <input
                 type="text"
                 name="color2"
                 value={formData.color2}
                 onChange={handleChange}
-                placeholder={t('placeholder_blue')}
-                aria-label={t('choose_color_pattern')}
+                placeholder={'placeholder_blue'}
+                aria-label={'choose_color_pattern'}
               />
             </label>
             <label className="input">
-              {t('add_personalized_message')}
+              {'add_personalized_message'}
               <input
                 type="text"
                 name="personalizedMessage"
                 value={formData.personalizedMessage}
                 onChange={handleChange}
-                placeholder={t('placeholder_happy_birthday')}
-                aria-label={t('add_personalized_message')}
+                placeholder={'placeholder_happy_birthday'}
+                aria-label={'add_personalized_message'}
               />
             </label>
             <div className="fieldset">
-              <label>{t('choose_shape')}</label>
-              <div className="radio-group">
+              <label>{'choose_shape'}</label>
+              {/* <div className="radio-group">
                 {product.shapes.map((shape, index) => (
                   <label key={index}>
                     <input
@@ -86,20 +84,20 @@ const Customize = () => {
                       name="shape"
                       value={shape}
                       onChange={handleChange}
-                      aria-label={t(`shape_${shape.toLowerCase().replace(/ /g, '_')}`)}
+                      aria-label={`shape_${shape.toLowerCase().replace(/ /g, '_')}`}
                     />
-                    {t(`shape_${shape.toLowerCase().replace(/ /g, '_')}`)}
+                    {`shape_${shape.toLowerCase().replace(/ /g, '_')}`}
                   </label>
                 ))}
-              </div>
+              </div> */}
             </div>
           </>
         )}
 
         {(product.id === 4 || product.id === 5) && (
           <div className="fieldset">
-            <label>{t('choose_dimension')}</label>
-            <div className="radio-group">
+            <label>{'choose_dimension'}</label>
+            {/* <div className="radio-group">
               {product.dimension.map((dimension, index) => (
                 <label key={index}>
                   <input
@@ -107,37 +105,37 @@ const Customize = () => {
                     name="dimension"
                     value={dimension}
                     onChange={handleChange}
-                    aria-label={t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
+                    aria-label={`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`}
                   />
-                  {t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
+                  {`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`}
                 </label>
               ))}
-            </div>
+            </div> */}
           </div>
         )}
 
         {product.id === 6 && (
           <>
             <label className="input">
-              {t('choose_color_bowl')}
+              {'choose_color_bowl'}
               <input
                 type="text"
                 name="color"
                 value={formData.color}
                 onChange={handleChange}
-                placeholder={t('placeholder_white')}
-                aria-label={t('choose_color_bowl')}
+                placeholder={'placeholder_white'}
+                aria-label={'choose_color_bowl'}
               />
             </label>
             <label className="input">
-              {t('choose_color_pattern_4')}
+              {'choose_color_pattern_4'}
               <input
                 type="text"
                 name="color2"
                 value={formData.color2}
                 onChange={handleChange}
-                placeholder={t('placeholder_colors')}
-                aria-label={t('choose_color_pattern_4')}
+                placeholder={'placeholder_colors'}
+                aria-label={'choose_color_pattern_4'}
               />
             </label>
           </>
@@ -145,36 +143,36 @@ const Customize = () => {
 
         {product.id === 7 && (
           <label className="input">
-            {t('choose_two_colors')}
+            {'choose_two_colors'}
             <input
               type="text"
               name="color"
               value={formData.color}
               onChange={handleChange}
-              placeholder={t('placeholder_brown_green')}
-              aria-label={t('choose_two_colors')}
+              placeholder={'placeholder_brown_green'}
+              aria-label={'choose_two_colors'}
             />
           </label>
         )}
 
         {(product.id === 8 || product.id === 9) && (
           <label className="input">
-            {t('choose_color')}
+            {'choose_color'}
             <input
               type="text"
               name="color"
               value={formData.color}
               onChange={handleChange}
-              placeholder={t('placeholder_green')}
-              aria-label={t('choose_color')}
+              placeholder={'placeholder_green'}
+              aria-label={'choose_color'}
             />
           </label>
         )}
 
         {(product.id === 10 || product.id === 11 || product.id === 12) && (
           <div className="fieldset">
-            <label>{t('choose_dimension')}</label>
-            <div className="radio-group">
+            <label>{'choose_dimension'}</label>
+            {/* <div className="radio-group">
               {product.dimension.map((dimension, index) => (
                 <label key={index}>
                   <input
@@ -182,16 +180,16 @@ const Customize = () => {
                     name="dimension"
                     value={dimension}
                     onChange={handleChange}
-                    aria-label={t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
+                    aria-label={`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`}
                   />
-                  {t(`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`)}
+                  {`dimension_${dimension.toLowerCase().replace(/ /g, '_').replace(/:/g, '').replace(/cm/g, 'cm').replace(/m/g, 'm')}`}
                 </label>
               ))}
-            </div>
+            </div> */}
           </div>
         )}
 
-        <button type="submit">{t('submit')}</button>
+        <button type="submit">{'submit'}</button>
       </form>
     </div>
   );
