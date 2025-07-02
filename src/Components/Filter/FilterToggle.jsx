@@ -3,16 +3,16 @@ export default function FilterToggle(props) {
 
   if (active) {
     return (
-      <button onClick={onClear} className="btn ph3 pv1 br3 f6 ba b--moon-gray">
-        Clear filter
+      <button onClick={onClear} className="btnFilter ph3 pv1 br3 f6 ba b--moon-gray">
+        Clear
       </button>
     );
   }
 
   if (visible) {
     return (
-      <button onClick={onApply} className="btn ph3 pv1 br3 f6 ba b--moon-gray">
-        Apply filter
+      <button onClick={onApply} className="btnFilter ph3 pv1 br3 f6 ba b--moon-gray">
+        Apply
       </button>
     );
   }

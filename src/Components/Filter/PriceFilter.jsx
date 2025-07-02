@@ -16,7 +16,7 @@ export default function PriceFilter({ maxPrice, onFilter }) {
   const onClearFilter = () => {
     setFilterActive(false);
     setValues([0, maxPrice]);
-    onFilter(null); // Or: onFilter({ minPrice: 0, maxPrice })
+    onFilter({ minPrice: null, maxPrice: null }); 
   };
 
   return (

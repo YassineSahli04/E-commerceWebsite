@@ -1,19 +1,29 @@
+import all_product from '../Assets/all_product';
 import './Filter.css';
 // import LocationFilters from './LocationFilters';
-// import PriceFilter from './PriceFilter';
+import PriceFilter from './PriceFilter';
 
 export default function Filter({ items, onFilter }) {
-  const itemCounts = {
-    traditional: items.filter(i => i.type === 'traditional').length,
-    apartment: items.filter(i => i.type === 'apartment').length,
-    villa: items.filter(i => i.type === 'villa').length,
-  };
-  const maxPrice = Math.max(...items.map(item => item.price));
+    const itemCounts = {
+        traditional: items.filter(i => i.type === 'traditional').length,
+        apartment: items.filter(i => i.type === 'apartment').length,
+        villa: items.filter(i => i.type === 'villa').length,
+    };
+    const maxPrice = Math.max(...items.map(item => item.new_price));
 
-  const handleTypeFilter = (type) => {
-    const filtered = items.filter(item => item.type === type);
-    onFilter(filtered);
-  };
+    const handleTypeFilter = (type) => {
+        const filtered = items.filter(item => item.type === type);
+        onFilter(filtered);
+    };
+    const handlePriceFilter = ({ minPrice, maxPrice }) => {
+        if(minPrice===null || maxPrice===null){
+            onFilter(all_product);
+        }else{
+            const filtered = items.filter(item => item.new_price >= minPrice && item.new_price <= maxPrice);
+            onFilter(filtered);
+        }
+
+    };
 
   return (
     <div className="w-25 mr4 pa3">
@@ -45,8 +55,8 @@ export default function Filter({ items, onFilter }) {
           </li>
         </ul>
 
-        {/* <LocationFilters items={items} onFilter={onFilter} />
-        <PriceFilter maxPrice={maxPrice} onFilter={onFilter} /> */}
+        {/* <LocationFilters items={items} onFilter={onFilter} /> */}
+        <PriceFilter maxPrice={maxPrice} onFilter={handlePriceFilter} />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ export default function CollapsibleList({ title, children, actionButton, default
         <button
           onClick={() => setVisible((visible) => !visible)}
           className={
-            'btn bn b pa0 tl w-100 bg-transparent hover-light-purple' +
+            'btnFilter bn b pa0 tl w-100 bg-transparent hover-light-purple' +
             (visible ? ' light-purple' : '')
           }
         >

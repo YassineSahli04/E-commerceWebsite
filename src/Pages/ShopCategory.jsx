@@ -16,7 +16,7 @@ const ShopCategory = (props) => {
           <Filter items={all_product} onFilter={setDisplayedItems}/>
 
           <div className="shopcategory-products">
-            {displayedItems.map((item, i) => (
+            {Array.isArray(displayedItems) && displayedItems.map((item, i) => (
               <Item key={i} id={item.id} artisan={item.artisan} description={item.description} image={item.image} new_price={item.new_price} old_price={item.old_price} />
             ))}
           </div>

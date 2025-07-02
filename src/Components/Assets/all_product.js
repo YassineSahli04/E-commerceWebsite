@@ -9,7 +9,7 @@ const all_product = [
     city: "Sidi Bou Said",
     type: "traditional",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 100.0,
     old_price: 80.5,
   },
   {
@@ -19,7 +19,7 @@ const all_product = [
     city: "Tunis",
     type: "apartment",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 70.0,
     old_price: 80.5,
   },
   {
@@ -29,7 +29,7 @@ const all_product = [
     city: "Hammamet",
     type: "villa",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 80.0,
     old_price: 80.5,
   },
   {
@@ -39,7 +39,7 @@ const all_product = [
     city: "Kairouan",
     type: "traditional",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 60.0,
     old_price: 80.5,
   },
   {
@@ -49,7 +49,7 @@ const all_product = [
     city: "Sousse",
     type: "apartment",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 40.0,
     old_price: 80.5,
   },
   {
@@ -59,7 +59,7 @@ const all_product = [
     city: "La Marsa",
     type: "villa",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 30.0,
     old_price: 80.5,
   },
   {
@@ -69,7 +69,7 @@ const all_product = [
     city: "Tozeur",
     type: "traditional",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 20.0,
     old_price: 80.5,
   },
   {
@@ -79,7 +79,7 @@ const all_product = [
     city: "Ariana",
     type: "apartment",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 10.0,
     old_price: 80.5,
   },
   {
@@ -89,7 +89,7 @@ const all_product = [
     city: "El Menzah",
     type: "villa",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 90.0,
     old_price: 80.5,
   },
   {
@@ -99,7 +99,7 @@ const all_product = [
     city: "Mahdia",
     type: "traditional",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 59.0,
     old_price: 80.5,
   },
   {
@@ -109,7 +109,7 @@ const all_product = [
     city: "Ben Arous",
     type: "apartment",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 88.0,
     old_price: 80.5,
   },
   {
@@ -119,7 +119,7 @@ const all_product = [
     city: "Gammarth",
     type: "villa",
     image: p1_img,
-    new_price: 50.0,
+    new_price: 44.0,
     old_price: 80.5,
   }
 ];
