@@ -11,6 +11,7 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
+
 .tour-title-full {
   font-size: 2.5rem;
   text-align: center;
@@ -254,6 +255,11 @@
     margin-right: 10px;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+.action button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .productdisplay-right-category {

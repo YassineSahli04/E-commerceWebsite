@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { ShopContext } from '../../Context/ShopContext';
-import { useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const ProductDisplay = (props) => {
-
+    const [isDisabled, setIsDisabled] = useState(false);
     const { product, all_product } = props;
     const { addToCart } = useContext(ShopContext);
 
@@ -80,7 +80,10 @@ const ProductDisplay = (props) => {
         </div>
       </div>
         <div className='action'>
-            <button onClick={() => { addToCart(product.id) }} aria-label={'add_to_cart'}>Add To Visits Cart</button> {'OR'}
+            <button onClick={() => { 
+              addToCart(product.id)
+              setIsDisabled(true);
+             }} disabled={isDisabled} aria-label={'add_to_cart'}>Add To Visits Cart</button> {'OR'}
             <Link to='/contact'><button aria-label={'contact_artisan'}>Contact Seller</button></Link>
         </div>
         <div className='similar-products-section'>
