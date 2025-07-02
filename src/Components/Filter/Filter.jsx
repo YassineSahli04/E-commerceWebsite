@@ -1,44 +1,63 @@
+import { useState, useEffect } from 'react';
 import all_product from '../Assets/all_product';
 import './Filter.css';
 import LocationFilter from './LocationFilter';
 import PriceFilter from './PriceFilter';
 
 export default function Filter({ items, onFilter }) {
-    const itemCounts = {
-        traditional: items.filter(i => i.type === 'traditional').length,
-        apartment: items.filter(i => i.type === 'apartment').length,
-        villa: items.filter(i => i.type === 'villa').length,
-    };
-    const maxPrice = Math.max(...items.map(item => item.new_price));
+  const [selectedType, setSelectedType] = useState(null);
+  const [selectedLocations, setSelectedLocations] = useState([]);
+  const [selectedPrice, setSelectedPrice] = useState({ minPrice: 0, maxPrice: Math.max(...items.map(i => i.new_price)) });
+
+  const availableLocation = [...new Set(items.map(item => item.city))];
+  const maxPrice = Math.max(...items.map(item => item.new_price));
+
+  const itemCounts = {
+    traditional: items.filter(i => i.type === 'traditional').length,
+    apartment: items.filter(i => i.type === 'apartment').length,
+    villa: items.filter(i => i.type === 'villa').length,
+  };
+
+  // Apply all filters together
+  useEffect(() => {
+    let filtered = items;
+
+    if (selectedType) {
+      filtered = filtered.filter(item => item.type === selectedType);
+    }
+
+    if (selectedLocations.length > 0) {
+      filtered = filtered.filter(item => selectedLocations.includes(item.city));
+    }
+
+    if (selectedPrice) {
+      filtered = filtered.filter(item =>
+        item.new_price >= selectedPrice.minPrice && item.new_price <= selectedPrice.maxPrice
+      );
+    }
+
+    onFilter(filtered);
+  }, [selectedType, selectedLocations, selectedPrice, items, onFilter]);
 
     const handleTypeFilter = (type) => {
+    if (!type) {
+        onFilter(items); 
+    } else {
         const filtered = items.filter(item => item.type === type);
         onFilter(filtered);
+    }
     };
-    const availableLocation = [...new Set(items.map(item =>item.city))];
-    const handlePriceFilter = ({ minPrice, maxPrice }) => {
-        if(minPrice===null || maxPrice===null){
-            onFilter(all_product);
-        }else{
-            const filtered = items.filter(item => item.new_price >= minPrice && item.new_price <= maxPrice);
-            onFilter(filtered);
-        }
 
-    };
-    const handleLocationFilter = (selectedLocations) => {
-        if (selectedLocations.length === 0) {
-            onFilter(items);
-            return;
-        }
+  const handleLocationFilter = (locations) => {
+    setSelectedLocations(locations);
+  };
 
-        const filtered = items.filter((item) =>
-            selectedLocations.includes(item.city)
-        );
-        onFilter(filtered);
-    };
+  const handlePriceFilter = (range) => {
+    setSelectedPrice(range);
+  };
 
   return (
-    <div className="w-25 mr4 pa3">
+    <div className="filter-container w-25 mr4 pa3">
       <div style={{ position: 'sticky', top: '20px' }}>
         <ul className="list pa0 ma0 pb3 bb b--black-10">
           <li className="f6 fw5 silver mb2">
@@ -47,6 +66,14 @@ export default function Filter({ items, onFilter }) {
               <span>{items.length} Products</span>
             </div>
           </li>
+            <li>
+            <button
+                onClick={() => handleTypeFilter(null)}
+                className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
+                All properties
+                <span>{items.length}</span>
+            </button>
+            </li>
           <li>
             <button onClick={() => handleTypeFilter('traditional')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
               Traditional Houses
