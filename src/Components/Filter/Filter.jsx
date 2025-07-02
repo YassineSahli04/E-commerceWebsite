@@ -1,6 +1,6 @@
 import all_product from '../Assets/all_product';
 import './Filter.css';
-// import LocationFilters from './LocationFilters';
+import LocationFilter from './LocationFilter';
 import PriceFilter from './PriceFilter';
 
 export default function Filter({ items, onFilter }) {
@@ -15,6 +15,7 @@ export default function Filter({ items, onFilter }) {
         const filtered = items.filter(item => item.type === type);
         onFilter(filtered);
     };
+    const availableLocation = [...new Set(items.map(item =>item.city))];
     const handlePriceFilter = ({ minPrice, maxPrice }) => {
         if(minPrice===null || maxPrice===null){
             onFilter(all_product);
@@ -23,6 +24,17 @@ export default function Filter({ items, onFilter }) {
             onFilter(filtered);
         }
 
+    };
+    const handleLocationFilter = (selectedLocations) => {
+        if (selectedLocations.length === 0) {
+            onFilter(items);
+            return;
+        }
+
+        const filtered = items.filter((item) =>
+            selectedLocations.includes(item.city)
+        );
+        onFilter(filtered);
     };
 
   return (
@@ -55,7 +67,7 @@ export default function Filter({ items, onFilter }) {
           </li>
         </ul>
 
-        {/* <LocationFilters items={items} onFilter={onFilter} /> */}
+        <LocationFilter availableLocations={availableLocation} onFilter={handleLocationFilter} />
         <PriceFilter maxPrice={maxPrice} onFilter={handlePriceFilter} />
       </div>
     </div>
