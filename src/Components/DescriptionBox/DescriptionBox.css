@@ -1,3 +1,19 @@
+.review{
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.review-stars{
+    display: flex;
+    align-items: center;
+    color: #1c1c1c;
+    font-size: 14px;
+    width: 40px;
+    margin-bottom: 5px;
+}
 .descriptionbox{
     margin: 120px 170px;
 }
