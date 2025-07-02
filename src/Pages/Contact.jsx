@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './CSS/Contact.css'; 
-import hero_image from '../Components/Assets/Picture1.jpg';
+import hero_image from '../Components/Assets/ContactImage.png';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -48,7 +48,6 @@ const Contact = () => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
-      // Handle form submission logic here
       console.log('Form submitted:', formData);
       setFormData({
         firstName: '',
@@ -68,8 +67,8 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact">
-        <h1>Contact artisan for any questions you have</h1>
-        <p>We will send your message directly to the artisan for this product</p>
+        <h1>Contact seller for any questions you have</h1>
+        <p>We will send your message directly to the seller for this Property.</p>
         <form className="contact-form" onSubmit={handleSubmit}>
           <label>
             First name
