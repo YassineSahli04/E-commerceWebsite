@@ -52,6 +52,7 @@ export default function Filter({ items, onFilter }) {
   };
 
   const handlePriceFilter = (range) => {
+    
     setSelectedPrice(range);
   };
 
