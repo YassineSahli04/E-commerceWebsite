@@ -75,19 +75,19 @@ export default function Filter({ items, onFilter }) {
             </button>
             </li>
           <li>
-            <button onClick={() => handleTypeFilter('traditional')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
+            <button onClick={() => handleTypeFilter('Traditional House')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
               Traditional Houses
               <span>{itemCounts['traditional']}</span>
             </button>
           </li>
           <li>
-            <button onClick={() => handleTypeFilter('apartment')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
+            <button onClick={() => handleTypeFilter('Apartment')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
               Apartments
               <span>{itemCounts['apartment']}</span>
             </button>
           </li>
           <li>
-            <button onClick={() => handleTypeFilter('villa')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
+            <button onClick={() => handleTypeFilter('Villa')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
               Villas
               <span>{itemCounts['villa']}</span>
             </button>

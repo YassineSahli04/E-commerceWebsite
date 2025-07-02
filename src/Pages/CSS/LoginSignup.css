@@ -8,7 +8,6 @@ body {
     width: 100%;
     min-height: 90vh;
     background: #ffffff;
-    padding-top: 100px;
 }
 
 .loginsignup-container {
@@ -16,7 +15,7 @@ body {
     max-width: 550px;
     background: white;
     margin: auto;
-    padding: 30px 40px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -46,7 +45,7 @@ body {
     width: 100%;
     height: 60px;
     color: white;
-    background: #ff4141;
+    background: #0C3053;
     margin-top: 30px;
     border: none;
     font-size: 22px;
@@ -112,4 +111,61 @@ a{
 
 .loginsignup-fields .error-input {
     border: 1px solid red !important;
+}
+
+.custom-checkbox-container {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 35px;
+  margin: 10px 0;
+  user-select: none;
+  color: #333;
+}
+
+.custom-checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-checkbox-container .checkmark {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.custom-checkbox-container input:checked ~ .checkmark {
+  background-color: #0C3053;
+  border-color: #0C3053;
+}
+
+.custom-checkbox-container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
