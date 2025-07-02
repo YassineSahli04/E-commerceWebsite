@@ -13,12 +13,11 @@ export default function Filter({ items, onFilter }) {
   const maxPrice = Math.max(...items.map(item => item.new_price));
 
   const itemCounts = {
-    traditional: items.filter(i => i.type === 'traditional').length,
-    apartment: items.filter(i => i.type === 'apartment').length,
-    villa: items.filter(i => i.type === 'villa').length,
+    traditional: items.filter(i => i.type === 'Traditional House').length,
+    apartment: items.filter(i => i.type === 'Apartment').length,
+    villa: items.filter(i => i.type === 'Villa').length,
   };
 
-  // Apply all filters together
   useEffect(() => {
     let filtered = items;
 
@@ -82,13 +81,13 @@ export default function Filter({ items, onFilter }) {
           </li>
           <li>
             <button onClick={() => handleTypeFilter('apartment')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
-              Apartment
+              Apartments
               <span>{itemCounts['apartment']}</span>
             </button>
           </li>
           <li>
             <button onClick={() => handleTypeFilter('villa')} className="btnFilter bn fw5 pa0 pv2 w-100 tl bg-transparent hover-light-purple flex justify-between">
-              Villa
+              Villas
               <span>{itemCounts['villa']}</span>
             </button>
           </li>

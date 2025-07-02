@@ -1,15 +1,68 @@
-.item{
-    width: 25%;
-    align-items: center;
-    margin-top: 20px;
+
+.t-card{
+    width: 32%;
+    text-align: start;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 1rem 0.8rem;
+    text-decoration: none;
+    color: black;
 }
-.item img{
+
+.t-image{
+    height: 250px;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+.t-image img{
     width: 100%;
-    height: 55%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    border-radius: 7px;
 }
-.item p{
-    margin: 6px 0px;
+
+.t-image:hover img{
+    transform: scale(1.3);
 }
+
+.t-card h4{
+    font-size: 1.3rem;
+    padding: 0.9rem 0 0.2rem 0;
+    text-decoration: none;
+    color: black;
+}
+
+.scroll-item-card.large-card {
+  flex: 0 0 auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+  box-shadow: 2px 2px 5px #333;
+}
+
+
+@media screen and (max-width:850px){
+    .scroll-item-card.large-card {
+        width: 300px;
+    }
+    .tour{
+        margin: 0;
+        max-width: 100%;
+    }
+    .tourcard{
+        flex-direction: column;
+    }
+    .t-card{
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
 .item-prices{
     display: flex;
     gap: 15px;
@@ -35,10 +88,9 @@
 }
 .a{color: black;}
 .link {
-    color: inherit; /* Keeps the text color unchanged */
     text-decoration: underline;
     text-decoration-color: black;
-    color: black; /* Sets the underline color to black */
+    color: black;
   }
 @media(max-width:800px){
     .item{

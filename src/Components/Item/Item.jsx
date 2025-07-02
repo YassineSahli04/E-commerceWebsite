@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom'
 
 const Item = (props) => {
   return (
-    <div className='item'>
-     
-      <Link to={`/product/${props.id}`}><img onClick={window.scrollTo(0,0)} src={props.image} alt="" /></Link>
-     
-      <p>{props.description}</p>
-      <p> Artisan :{props.artisan}</p>
+    <Link to={`/tour/${props.id}`} className="t-card scroll-item-card large-card">
+      <div className="t-image">
+        <img src={props.image} alt={"Image"} />
+      </div>
+      <h4>{props.description}</h4>
+      <h6>{props.city}</h6>
+      <p>{props.type}</p>
       <div className="item-prices">
         <div className="item-price-new">
             ${props.new_price}
@@ -19,9 +20,9 @@ const Item = (props) => {
         </div>
         
       </div>
-      <Link to={`/product/${props.id}`}> 
-      <p className='link'>Learn more about the product</p></Link>
-    </div>
+      <p className='link'>Learn more about the product</p>
+    </Link>
+
   )
 }
 
