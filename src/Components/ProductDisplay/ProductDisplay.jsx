@@ -11,8 +11,8 @@ const ProductDisplay = (props) => {
     const { product, all_product } = props;
     const { addToCart } = useContext(ShopContext);
 
-    const similarProducts = all_product.filter(p => p.group === product.group && p.id !== product.id).slice(0, 2);
-       const containerRef = useRef(null);
+    const similarProducts = all_product.filter(p => p.type === product.type && p.id !== product.id).slice(0, 2);
+    const containerRef = useRef(null);
 
     useEffect(() => {
         const container = containerRef.current;
@@ -83,6 +83,20 @@ const ProductDisplay = (props) => {
             <button onClick={() => { addToCart(product.id) }} aria-label={'add_to_cart'}>Add To Visits Cart</button> {'OR'}
             <Link to='/contact'><button aria-label={'contact_artisan'}>Contact Seller</button></Link>
         </div>
+        <div className='similar-products-section'>
+                <p className='products'>Those who liked this property also liked:</p>
+                <div className="similar-products">
+                    {similarProducts.map((p, index) => (
+                        <div key={index} className="similar-product-item">
+                            <Link to={`/product/${p.id}`}>
+                                <img src={p.image} alt={p.description} />
+                                <p>{p.description}</p>
+                            </Link>
+                            
+                        </div>
+                    ))}
+                </div>
+        </div>
 
 
 
@@ -113,20 +127,7 @@ const ProductDisplay = (props) => {
         //             </div>
         //         </div>
         //     </div>
-        //     <div className='similar-products-section'>
-        //         <p className='products'> {'those_who_liked_this_product_also_liked'}:</p>
-        //         <div className="similar-products">
-        //             {similarProducts.map((p, index) => (
-        //                 <div key={index} className="similar-product-item">
-        //                     <Link to={`/product/${p.id}`}>
-        //                         <img src={p.image} alt={p.description} />
-        //                     </Link>
-        //                     <p>{`product_${p.id}_description`}</p>
-        //                     <p>${p.new_price}</p>
-        //                 </div>
-        //             ))}
-        //         </div>
-        //     </div>
+
         // </section>
     );
 };

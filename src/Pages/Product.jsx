@@ -6,7 +6,6 @@ import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
 import DescriptionBox from '../Components/DescriptionBox/DescriptionBox';
 
 import ContactArtisan from '../Pages/Contact_us';
-import Customize from '../Components/Customize/Customize'
 
 const Product = () => {
   const {all_product}= useContext(ShopContext);
@@ -19,7 +18,7 @@ const Product = () => {
     <div>
       <Breadcrum product={product}/>
       <ProductDisplay product={product}  all_product={all_product} path='/contact_us' component={ContactArtisan} />
-      <Customize product={product}/>
+
       <DescriptionBox product={product}/>
      
      

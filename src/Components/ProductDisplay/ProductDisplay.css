@@ -288,6 +288,17 @@
 .similar-product-item {
     text-align: center;
     max-width: 200px;
+        text-align: start;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 1rem 0.8rem;
+      flex: 0 0 auto;
+    object-fit: cover;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s;
+    box-shadow: 2px 2px 5px #333;
 }
 
 .similar-product-item img {
@@ -295,6 +306,10 @@
     height: 200px;
     margin-bottom: 10px;
     cursor: pointer;
+}
+.similar-product-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .products {
