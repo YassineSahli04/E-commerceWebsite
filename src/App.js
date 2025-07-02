@@ -13,6 +13,7 @@ import Contact from'./Pages/Contact';
 import Contactus from'./Pages/Contact_us';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import Checkout from "./Pages/Checkout";
  
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path=':productId' element={<Product/>}/>
         </Route>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/checkout' element={<Checkout />} /> 
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/contact' element={<Contact/>} /> 
