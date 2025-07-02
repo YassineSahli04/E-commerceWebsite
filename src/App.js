@@ -11,13 +11,25 @@ import Signup from './Pages/Signup';
 import FAQ from './Pages/FAQ';
 import Contact from'./Pages/Contact';
 import Contactus from'./Pages/Contact_us';
-
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
  
 
 function App() {
+
+  function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // scroll to top-left
+  }, [pathname]);
+
+  return null;
+}
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop />
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}/>
