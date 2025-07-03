@@ -8,9 +8,10 @@ export default function CollapsibleList({ title, children, actionButton, default
       <div className="flex items-start justify-between relative mb2">
         <button
           onClick={() => setVisible((visible) => !visible)}
+          
           className={
-            'btnFilter bn b pa0 tl w-100 bg-transparent hover-light-purple' +
-            (visible ? ' light-purple' : '')
+            'btnFilter bn b pa0 tl w-100 bg-transparent hover-dark-blue' +
+            (visible ? ' dark-blue' : '')
           }
         >
           {title}
