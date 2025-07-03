@@ -1,28 +1,40 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import UserInfo from "../Components/Checkout/UserInfo";
 import PaymentInfo from "../Components/Checkout/PaymentInfo";
 import Confirmation from "../Components/Checkout/Confirmation";
+import { ShopContext } from "../Context/ShopContext";
+import CheckoutProgress from "../Components/Checkout/CheckoutProgress";
+
 
 export default function Checkout(){
-    const [step, setStep] = useState('checkout');
+    const [step, setStep] = useState(0);
+    const { clearCart } = useContext(ShopContext);
 
     function onCheckoutContinueClick(){
-        setStep('paymentInfo');
+        setStep(1);
     } 
     function onCheckoutPayClick(){
-        setStep('confirmation');
+        setStep(2);
     } 
+    useEffect(() => {
+        if(step === 2){
+            clearCart();
+        }
+        
+    }, [step]);
+    
     return(
         <>
-            {step === 'checkout' && (
+            <CheckoutProgress currentStep={step} />
+            {step === 0 && (
                 <UserInfo handleContinueClick={onCheckoutContinueClick} />
             )}
 
-            {step === 'paymentInfo' && (
+            {step === 1 && (
                 <PaymentInfo handlePayClick={onCheckoutPayClick}/>
             )}
-            {step === 'confirmation' && (
-                <Confirmation/>
+            {step === 2 && (
+                <Confirmation />
             )}
         </>
     )

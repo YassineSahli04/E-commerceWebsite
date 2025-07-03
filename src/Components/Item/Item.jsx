@@ -19,7 +19,7 @@ const Item = (props) => {
         </div>
         
       </div>
-      <p className='link'>Learn more about the product</p>
+      <p className='link'>Learn more about the property</p>
     </Link>
 
   )

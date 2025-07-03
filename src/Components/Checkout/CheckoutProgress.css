@@ -1,0 +1,56 @@
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  position: relative;
+}
+
+.progress-step {
+  position: relative;
+  flex: 1;
+  text-align: center;
+}
+
+.progress-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #0C3053;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.progress-circle.completed {
+  background-color: #0C3053;
+}
+
+.progress-circle.active {
+  border-width: 4px;
+}
+
+.progress-line {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #d0e0f0;
+  transform: translateX(50%);
+}
+
+.progress-line.completed {
+  background-color: #0C3053;
+}
+
+.progress-label {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.progress-label.active {
+  font-weight: bold;
+  color: #0C3053;
+}
+

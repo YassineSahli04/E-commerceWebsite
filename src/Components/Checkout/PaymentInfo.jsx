@@ -29,12 +29,12 @@ export default function PaymentInfo({handlePayClick}) {
 
     return newErrors;
   };
-
-  const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
       console.log('Payment info submitted:', formData);
+      handlePayClick();
     } else {
       setErrors(validationErrors);
     }
@@ -85,7 +85,7 @@ export default function PaymentInfo({handlePayClick}) {
           />
           {errors.cvv && <span className="error">{errors.cvv}</span>}
 
-          <button type="submit" onClick={handlePayClick}>Pay Now</button>
+          <button type="submit">Pay Now</button>
         </form>
       </div>
     </div>

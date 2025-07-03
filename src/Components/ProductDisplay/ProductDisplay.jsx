@@ -100,38 +100,7 @@ const ProductDisplay = (props) => {
                     ))}
                 </div>
         </div>
-
-
-
     </div>
-        // <section className='productdisplay' role='region' aria-labelledby={`product_${product.id}`}>
-        //     <div className="productdisplay-content">
-        //         <div className="productdisplay-left">
-        //             <div className="productdisplay-img">
-        //                 <img 
-        //                     className='productdisplay-main-img' 
-        //                     src={product.image} 
-        //                     alt={product.description || "Product Image"} 
-        //                 />
-        //             </div>
-        //         </div>
-        //         <div className="productdisplay-right">
-        //             <h1 id={`product_${product.id}_description`}>{`product_${product.id}_description`}</h1>
-
-        //             <p>{'most_frequently_used_words'}: <span className="encircled">{'beautiful'}</span>, <span className="encircled">{'traditional'}</span>, <span className="encircled">{'authentic'}</span></p>
-        //             <div className="productdisplay-right-prices">
-        //                 <div className="productdisplay-right-price-old">${product.old_price}</div>
-        //                 <div className="productdisplay-right-price-new">${product.new_price}</div>
-        //             </div>
-
-        //             <div>
-        //                 <button onClick={() => { addToCart(product.id) }} aria-label={'add_to_cart'}>Add To Visits Cart</button> {'OR'}
-        //                 <Link to='/contact'><button aria-label={'contact_artisan'}>Contact Seller</button></Link>
-        //             </div>
-        //         </div>
-        //     </div>
-
-        // </section>
     );
 };
 

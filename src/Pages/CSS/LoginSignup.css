@@ -61,8 +61,12 @@ body {
 }
 
 .loginsignup-login span {
-    color: #ff4141;
+    color: #0C3053;
     font-weight: 600;
+}
+.loginsignup-login a {
+    color: #0C3053;
+    text-decoration: none;
 }
 
 .loginsignup-agree {

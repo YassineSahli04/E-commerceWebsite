@@ -47,6 +47,7 @@ export default function UserInfo({ handleContinueClick })  {
         requireVisit: false,
         password: ''
       });
+      handleContinueClick();
       setErrors({});
     } else {
       setErrors(validationErrors);
@@ -124,7 +125,7 @@ export default function UserInfo({ handleContinueClick })  {
 
           {errors.password && <span className="error">{errors.password}</span>}
 
-          <button type="submit" onClick={handleContinueClick}>Continue</button>
+          <button type="submit">Continue</button>
         </form>
       </div>
     </div>

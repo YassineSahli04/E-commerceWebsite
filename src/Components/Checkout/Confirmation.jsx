@@ -1,5 +1,6 @@
 
 import '../../Pages/CSS/LoginSignup.css';
+import { Link } from 'react-router-dom';
 
 export default function Confirmation() {
   return (
@@ -13,6 +14,8 @@ export default function Confirmation() {
           If you requested a visit, we will contact you soon to schedule it.
         </p>
         <p style={{ marginTop: '30px', fontWeight: '500' }}>We hope you enjoy your new property.</p>
+
+        <Link to="/"><button>Home</button></Link>
       </div>
     </div>
   );

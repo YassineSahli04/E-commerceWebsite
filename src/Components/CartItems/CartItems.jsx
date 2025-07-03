@@ -1,13 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext,  useState } from 'react';
 import './CartItems.css';
 import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const CartItems = () => {
-  const { getTotalCartAmount, all_product, cartItems, removeFromCart } = useContext(ShopContext);
+  const { getTotalCartAmount, all_product, cartItems, removeFromCart, isCartEmpty } = useContext(ShopContext);
   const [promoCode, setPromoCode] = useState('');
   const [promoError, setPromoError] = useState('');
+  const navigate = useNavigate();
+  
 
   const handlePromoCodeChange = (e) => {
     const value = e.target.value;
@@ -16,6 +18,12 @@ const CartItems = () => {
       setPromoError('');
     } else {
       setPromoError('Must be just numbers');
+    }
+  };
+
+  const handleCheckoutClick = () => {
+    if (!isCartEmpty) {
+      navigate('/checkout');
     }
   };
 
@@ -63,7 +71,10 @@ const CartItems = () => {
               <h3>${Math.round(getTotalCartAmount()*1.15)}</h3>
             </div>
           </div>
-          <button><Link to="/checkout">PROCEED TO CHECKOUT</Link></button>
+          <button disabled={isCartEmpty}
+                onClick={handleCheckoutClick}
+                style={{ opacity: isCartEmpty ? 0.6 : 1, cursor: isCartEmpty ? 'not-allowed' : 'pointer' }}
+          >PROCEED TO CHECKOUT</button>
         </div>
         <div className="cartitems-promocode">
           <p>If you have a promo code, enter it here</p>
