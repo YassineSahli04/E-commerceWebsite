@@ -29,26 +29,26 @@ function App() {
 }
   return (
     <div>
-      <BrowserRouter>
-      <ScrollToTop />
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Shop/>}/>
-        <Route path='/products' element={<ShopCategory  category="products"/>}/>
-        <Route path='/FAQ' element={<FAQ/>}/>
-        <Route path="/product" element={<Product/>}>
-          <Route path=':productId' element={<Product/>}/>
-        </Route>
-        <Route path='/cart' element={<Cart/>}/>
-        <Route path='/checkout' element={<Checkout />} /> 
-        <Route path='/login' element={<Login/>}/>
-        <Route path='/signup' element={<Signup/>}/>
-        <Route path='/contact' element={<Contact/>} /> 
-        <Route path='/contact_us' element={<Contactus />} /> 
-       
-      </Routes>
-      <Footer/>
+      <BrowserRouter basename="/E-commerceWebsite">
+        <ScrollToTop />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Shop />} />
+          <Route path="/products" element={<ShopCategory category="products" />} />
+          <Route path="/FAQ" element={<FAQ />} />
+          <Route path="/product">
+            <Route path=":productId" element={<Product />} />
+          </Route>
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact_us" element={<Contactus />} />
+        </Routes>
+        <Footer />
       </BrowserRouter>
+
     </div>
   );
 }
