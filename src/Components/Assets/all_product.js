@@ -1,344 +1,348 @@
-import p1_img from "./Picture3.png";
+import p1_img1 from "./desert1.jpg";
+import p1_img2 from "./desert2.jpg";
+import p1_img3 from "./desert3.jpg";
+import p1_img4 from "./desert4.jpg";
+import p1_img5 from "./desert5.jpg";
 
+import p2_img1 from "./maison1.1.jpg";
+import p2_img2 from "./maison1.2.jpg";
+import p2_img3 from "./maison1.3.jpg";
+import p2_img4 from "./maison1.4.jpg";
+import p2_img5 from "./maison1.5.jpg";
+import p2_img6 from "./maison1.6.jpg";
+
+import p3_img1 from "./maison2.1.jpg";
+import p3_img2 from "./maison2.2.jpg";
+import p3_img3 from "./maison2.3.jpg";
+import p3_img4 from "./maison2.4.jpg";
+import p3_img5 from "./maison2.5.jpg";
+import p3_img6 from "./maison2.6.jpg";
+
+import p4_img1 from "./maison3.1.jpg";
+import p4_img2 from "./maison3.2.jpg";
+import p4_img3 from "./maison3.3.jpg";
+import p4_img4 from "./maison3.4.jpg";
+import p4_img5 from "./maison3.5.jpg";
+
+import p5_img1 from "./maison4.1.jpg";
+import p5_img2 from "./maison4.2.jpg";
+import p5_img3 from "./maison4.3.jpg";
+import p5_img4 from "./maison4.4.jpg";
+import p5_img5 from "./maison4.5.jpg";
+import p5_img6 from "./maison4.6.jpg";
+
+import p6_img1 from "./maison5.1.jpg";
+import p6_img2 from "./maison5.2.jpg";
+import p6_img3 from "./maison5.3.jpg";
+import p6_img4 from "./maison5.4.jpg";
+import p6_img5 from "./maison5.5.jpg";
+import p6_img6 from "./maison5.6.jpg";
+
+import p7_img1 from "./maison6..jpg";
+import p7_img2 from "./maison6.2.jpg";
+import p7_img3 from "./maison6.3.jpg";
+import p7_img4 from "./maison6.4.jpg";
+import p7_img5 from "./maison6.5.jpg";
+
+import p8_img1 from "./maison7.1.jpg";
+import p8_img2 from "./maison7.2.jpg";
+import p8_img3 from "./maison7.3.jpg";
+import p8_img4 from "./maison7.4.jpg";
+import p8_img5 from "./maison7.5.jpg";
+import p8_img6 from "./maison7.6.jpg";
+
+import p9_img1 from "./maison8.1.jpg";
+import p9_img2 from "./maison8.2.jpg";
+import p9_img3 from "./maison8.3.jpg";
+import p9_img4 from "./maison8.4.jpg";
+import p9_img5 from "./maison8.5.jpg";
+
+import p10_img1 from "./sidibou1.jpg";
+import p10_img2 from "./sidibou2.jpg";
+import p10_img3 from "./sidibou3.jpg";
+import p10_img4 from "./sidibou4.jpg";
+import p10_img5 from "./sidibou5.jpg";
+import p10_img6 from "./sidibou6.jpg";
+import p10_img7 from "./sidibou7.jpg";
+import p10_img8 from "./sidibou8.jpg";
+
+import p11_img1 from "./Tozer1.jpg";
+import p11_img2 from "./Tozer2.jpg";
+import p11_img3 from "./Tozer3.jpg";
+import p11_img4 from "./Tozer4.jpg";
+import p11_img5 from "./Tozer5.jpg";
+
+import p12_img1 from "./traditionel1.jpg";
+import p12_img2 from "./traditionel2.jpg";
+import p12_img3 from "./traditionel3.jpg";
+import p12_img4 from "./traditionel4.jpg";
+import p12_img5 from "./traditionel5.jpg";
+
+// import p1_img1 from "./desert1.jpg";
+// import p1_img2 from "./desert2.jpg";
+// import p1_img3 from "./desert3.jpg";
+// import p1_img4 from "./desert4.jpg";
+// import p1_img5 from "./desert5.jpg";
+// import p1_img6 from "./Picture3.png";
+
+// import p1_img1 from "./desert1.jpg";
+// import p1_img2 from "./desert2.jpg";
+// import p1_img3 from "./desert3.jpg";
+// import p1_img4 from "./desert4.jpg";
+// import p1_img5 from "./desert5.jpg";
+// import p1_img6 from "./Picture3.png";
+
+// import p1_img1 from "./desert1.jpg";
+// import p1_img2 from "./desert2.jpg";
+// import p1_img3 from "./desert3.jpg";
+// import p1_img4 from "./desert4.jpg";
+// import p1_img5 from "./desert5.jpg";
+// import p1_img6 from "./Picture3.png";
 
 const all_product = [
   {
     id: 1,
-    description: "Traditional house with inner courtyard and blue windows",
-    price: 220000,
-    city: "Sidi Bou Said",
-    type: "Traditional House",
-    image: p1_img,
-    new_price: 100.0,
-    old_price: 80.5,
-      images: [
-      "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-      "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-      "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-      "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-      "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-      "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    ],
+    description: "Majestic riad with lush central courtyard and grand arches",
+    long_description: "This opulent riad in Kairouan blends tradition and luxury, featuring a grand courtyard adorned with palm trees, warm lighting, and refined archways. A perfect harmony between elegance and heritage, it offers a serene ambiance ideal for family or retreat living.",
+    city: "Kairouan",
+    type: "Apartment",
+    new_price: 480000,
+    old_price: 520000,
+    image:p1_img1,
+    images: [p1_img1, p1_img2, p1_img3, p1_img4, p1_img5],
     includes: [
-        "Round-trip 4×4 transfer from Tozeur",
-        "Guided walk through a mountain oasis",
-        "Demonstration of desert-survival techniques",
-        "Traditional Bedouin dinner by the campfire",
-        "Overnight stay in a nomadic-style desert camp",
-        "Sunrise sandboarding session",
-        "Visit to a small Berber village",
-        "Guided star-gazing experience with local astronomer"
+      "6 bedrooms",
+      "5 bathrooms",
+      "Open patio with fountain",
+      "Indoor-outdoor lounge area",
+      "Traditional Tunisian chandeliers",
+      "Full-service kitchen",
+      "Terrace with city views"
     ]
-    },
+  },
   {
     id: 2,
-    description: "Modern apartment near city center, 3 bedrooms",
-    price: 180000,
-    city: "Tunis",
-    type: "Apartment",
-    image: p1_img,
-    new_price: 70.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
+    description: "Modern Mediterranean villa with panoramic sea views",
+    long_description: "Located in the coastal city of Hammamet, this architectural marvel features fluid curves, bright white walls, and wide arched glass doors that open onto a pristine poolside. Ideal for lovers of minimalism and ocean breeze.",
+    city: "Hammamet",
+    type: "Villa",
+    new_price: 720000,
+    old_price: 800000,
+    image:p2_img1,
+    images: [p2_img1,p2_img2,p2_img3, p2_img4, p2_img5, p2_img6],
+    includes: [
+      "4 bedrooms",
+      "4 bathrooms",
+      "Infinity-edge pool",
+      "Panoramic sea-facing terraces",
+      "Floor-to-ceiling windows",
+      "Outdoor lounge area",
+      "Private beach access"
+    ]
   },
   {
     id: 3,
-    description: "Luxury villa with pool and garden, sea view",
-    price: 520000,
-    city: "Hammamet",
-    type: "Villa",
-    image: p1_img,
-    new_price: 80.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
+    description: "Organic-style appartments with spiral stairs and jungle vibes",
+    long_description: "Tucked away in the calm corners of Tabarka, this earth-toned villa embraces nature with its lush greenery, rustic materials, and unique spiral staircases. An ideal home for those who want to reconnect with the natural world in style.",
+    city: "Tabarka",
+    type: "Apartment",
+    new_price: 390000,
+    old_price: 400000,
+    image:p3_img1,
+    images: [p3_img1, p3_img2, p3_img3, p3_img4, p3_img5, p3_img6],
+    includes: [
+      "3 bedrooms",
+      "3 bathrooms",
+      "Spiral staircase",
+      "Tropical indoor garden",
+      "Rooftop terrace with wooden pergola",
+      "Natural light corridors",
+      "Eco-friendly construction"
+    ]
   },
   {
     id: 4,
-    description: "Cozy traditional house with rooftop terrace",
-    price: 195000,
-    city: "Kairouan",
-    type: "Traditional House",
-    image: p1_img,
-    new_price: 60.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
+    description: "Contemporary minimalist house with marble walkways",
+    long_description: "A tranquil residence in Mahdia blending modern Tunisian elegance with minimalist design. Featuring pristine white walls and serene water basins, it creates an atmosphere of calm sophistication.",
+    city: "Mahdia",
+    type: "Villa",
+    new_price: 510000,
+    old_price: 570000,
+    image:p4_img1,
+    images: [p4_img1, p4_img2, p4_img3, p4_img4, p4_img5],
+    includes: [
+      "3 bedrooms",
+      "2 bathrooms",
+      "Interior garden with olive trees",
+      "Stone and marble water features",
+      "Large open-space living",
+      "Sunlit corridors",
+      "High-end modern kitchen"
+    ]
   },
   {
     id: 5,
-    description: "Apartment with modern finishes and balcony",
-    price: 200000,
-    city: "Sousse",
-    type: "Apartment",
-    image: p1_img,
-    new_price: 40.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
+    description: "Rustic stone courtyard house with private plunge pool",
+    long_description: "Located in the heart of Djerba’s medina, this rustic home offers traditional charm with stone arches, antique wooden doors, and a peaceful courtyard featuring a vintage plunge pool. A step back into authentic island life.",
+    city: "Djerba",
+    type: "Traditional House",
+    new_price: 280000,
+    old_price: 285000,
+    image:p5_img1,
+    images: [p5_img1, p5_img2, p5_img3, p5_img4, p5_img5, p5_img6],
+    includes: [
+      "2 bedrooms",
+      "1 bathroom",
+      "Inner courtyard with small pool",
+      "Traditional Djerbian décor",
+      "Vaulted stone arches",
+      "Vintage tiled floors",
+      "Cozy outdoor seating area"
+    ]
   },
   {
     id: 6,
-    description: "Spacious villa in calm neighborhood with garage",
-    price: 480000,
-    city: "La Marsa",
+    description: "Desert-inspired white villa with cactus garden",
+    long_description: "This villa in Tataouine embraces Saharan aesthetics with clean white geometry, large sculptural cacti, and a minimalist desert garden. A peaceful desert haven with a luxury twist.",
+    city: "Djerba",
     type: "Villa",
-    image: p1_img,
-    new_price: 30.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
+    new_price: 430000,
+    old_price: 590000,
+    image:p6_img1,
+    images: [p6_img1, p6_img2, p6_img3, p6_img4, p6_img5, p6_img6],
+    includes: [
+      "3 bedrooms",
+      "2 bathrooms",
+      "Cactus rock garden",
+      "Modern desert-inspired interior",
+      "Large open patio",
+      "Sand-colored stone accents",
+      "Private rooftop sun deck"
+    ]
   },
   {
-    id: 7,
-    description: "Traditional home with archways and mosaic tiles",
-    price: 210000,
-    city: "Tozeur",
-    type: "Traditional House",
-    image: p1_img,
-    new_price: 20.0,
-    old_price: 80.5,
+  id: 7,
+  description: "Stone villa with panoramic mountain views and infinity pool",
+  long_description: "Perched on the hills of Le Kef, this traditional-style stone villa offers breathtaking views of the surrounding valleys. With its green shutters, olive trees, and peaceful poolside, it's the perfect blend of rustic charm and modern comfort.",
+  city: "Le Kef",
+  type: "Villa",
+  new_price: 680000,
+  old_price: 710000,
+  image: p7_img1,
+  images: [p7_img1, p7_img2, p7_img3, p7_img4, p7_img5],
+  includes: [
+    "5 bedrooms",
+    "4 bathrooms",
+    "Infinity pool with valley view",
+    "Stone façade and rustic shutters",
+    "Olive trees and Mediterranean garden",
+    "Sunset-facing terrace",
+    "Outdoor dining area"
+  ]
+},
+{
+  id: 8,
+  description: "Tropical-inspired apartment with arched windows and serene interior",
+  long_description: "This peaceful apartment in Gammarth embraces earthy textures and natural tones. Featuring large arched windows, indoor plants, and a custom low-sitting couch, the ambiance offers a perfect refuge from busy city life.",
+  city: "Gammarth",
+  type: "Apartment",
+  new_price: 450000,
+  old_price: 470000,
+  image: p8_img1,
+  images: [p8_img1, p8_img2, p8_img3, p8_img4, p8_img5, p8_img6],
+  includes: [
+    "2 bedrooms",
+    "2 bathrooms",
+    "Custom sunken sofa lounge",
+    "Floor-to-ceiling arched windows",
+    "Indoor tropical plants",
+    "Open-plan kitchen and living",
+    "Natural fiber rugs and wooden finishes"
+  ]
+},
+{
+  id: 9,
+  description: "Contemporary villa with palm garden and poolside lounge",
+  long_description: "Located in La Marsa, this modern villa features clean lines, large glass panels, and a lush garden surrounded by palm trees. Designed for comfort and style, the open layout flows seamlessly into a sun-drenched pool area.",
+  city: "La Marsa",
+  type: "Villa",
+  new_price: 740000,
+  old_price: 780000,
+  image: p9_img1,
+  images: [p9_img1, p9_img2, p9_img3, p9_img4, p9_img5],
+  includes: [
+    "4 bedrooms",
+    "4 bathrooms",
+    "Modern kitchen with island",
+    "Spacious outdoor terrace",
+    "Private swimming pool",
+    "Palm-lined garden",
+    "Indoor-outdoor living room"
+  ]
+},
+{
+  id: 10,
+  description: "Authentic blue-and-white traditional house with pool",
+  long_description: "Nestled in the heart of Sidi Bou Said, this stunning traditional house showcases the iconic white façade with deep blue wooden elements. With arched entrances and a serene pool, it’s a postcard-perfect embodiment of Tunisian coastal charm.",
+  city: "Sidi Bou Said",
+  type: "Traditional House",
+  new_price: 520000,
+  old_price: 550000,
+  image: p10_img1,
+  images: [p10_img1, p10_img2, p10_img3, p10_img4, p10_img5, p10_img6, p10_img7, p10_img8],
+  includes: [
+    "3 bedrooms",
+    "2 bathrooms",
+    "Interior courtyard pool",
+    "Ornate blue wooden balcony",
+    "Traditional white stone arches",
+    "Rooftop terrace",
+    "Decorative mashrabiya windows"
+  ]
+},
+{
+  id: 11,
+  description: "Desert riad with palm garden and central pool",
+  long_description: "This breathtaking riad in Tozeur features sandy-toned walls, intricate arched facades, and a peaceful central pool framed by palm trees. An immersive desert escape where traditional architecture meets serenity.",
+  city: "Tozeur",
+  type: "Traditional House",
+  new_price: 600000,
+  old_price: 645000,
+  image: p11_img1,
+  images: [p11_img1, p11_img2, p11_img3, p11_img4, p11_img5],
+  includes: [
+    "6 bedrooms",
+    "5 bathrooms",
+    "Central courtyard pool",
+    "Multiple arched terraces",
+    "Palm garden",
+    "Authentic brick architecture",
+    "Desert-inspired lounge decor"
+  ]
+},
+{
+  id: 12,
+  description: "Andalusian-style palace with vibrant zellige and arched galleries",
+  long_description: "In the heart of Tunis lies this magnificent traditional home, richly adorned with Andalusian zellige tiles, vaulted galleries, and intricate wood ceilings. A historical gem blending art, culture, and timeless beauty.",
+  city: "Tunis",
+  type: "Traditional House",
+  new_price: 880000,
+  old_price: 950000,
+  image: p12_img1,
+  images: [p12_img1, p12_img2, p12_img3, p12_img4, p12_img5],
+  includes: [
+    "7 bedrooms",
+    "6 bathrooms",
+    "Full zellige courtyard",
+    "Upper floor with balustrades",
+    "Hand-painted wooden ceiling",
+    "Decorative columns and arches",
+    "Traditional hammam room"
+  ]
+}
 
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
-  },
-  {
-    id: 8,
-    description: "Top-floor apartment with elevator access and city view",
-    price: 175000,
-    city: "Ariana",
-    type: "Apartment",
-    image: p1_img,
-    new_price: 10.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
-  },
-  {
-    id: 9,
-    description: "Modern villa with smart home features and garden",
-    price: 495000,
-    city: "El Menzah",
-    type: "Villa",
-    image: p1_img,
-    new_price: 90.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
-  },
-  {
-    id: 10,
-    description: "Stone-built traditional house in the old medina",
-    price: 185000,
-    city: "Mahdia",
-    type: "Traditional House",
-    image: p1_img,
-    new_price: 59.0,
-    old_price: 80.5,
-            images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
-  },
-  {
-    id: 11,
-    description: "Compact apartment ideal for young professionals",
-    price: 160000,
-    city: "Ben Arous",
-    type: "Apartment",
-    image: p1_img,
-    new_price: 88.0,
-    old_price: 80.5,
-              images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
-  },
-  {
-    id: 12,
-    description: "High-end villa with private pool and parking",
-    city: "Gammarth",
-    type: "Villa",
-    image: p1_img,
-    new_price: 44.0,
-    old_price: 80.5,
-              images: [
-                "https://ak-d.tripcdn.com/images/0221q12000kyhgtpfFCA2_W_1280_853_R5.webp?proc=watermark/image_trip1,l_ne,x_16,y_16,w_67,h_16;digimark/t_image,logo_tripbinary;ignoredefaultwm,1A8F",
-                "https://lh3.googleusercontent.com/p/AF1QipNMv2Fq7YyUGK0BnjEYb-To_nDqW6teTUUCGvaA=s1360-w1360-h1020-rw",
-                "https://i.pinimg.com/736x/3d/6f/30/3d6f30450df0ee8768b996eb445af549.jpg",
-                "https://i.pinimg.com/736x/05/26/af/0526af3ae554fdafc686968385a38797.jpg",
-                "https://i.pinimg.com/1200x/c7/07/40/c70740b3511b3d0a839e2806cda4ac63.jpg",
-                "https://images.unsplash.com/photo-1577968680674-d967769be12c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            ],
-            includes: [
-                "Round-trip 4×4 transfer from Tozeur",
-                "Guided walk through a mountain oasis",
-                "Demonstration of desert-survival techniques",
-                "Traditional Bedouin dinner by the campfire",
-                "Overnight stay in a nomadic-style desert camp",
-                "Sunrise sandboarding session",
-                "Visit to a small Berber village",
-                "Guided star-gazing experience with local astronomer"
-            ]
-  }
 ];
+
 
 
 export default all_product;

@@ -17,7 +17,7 @@ const ShopCategory = (props) => {
 
           <div className="shopcategory-products">
             {Array.isArray(displayedItems) && displayedItems.map((item, i) => (
-              <Item key={i} id={item.id} city={item.city} type={item.type} description={item.description} image={item.image} new_price={item.new_price} old_price={item.old_price} />
+              <Item key={i} id={item.id} city={item.city} type={item.type} description={item.description} image={item.images[0]} new_price={item.new_price} old_price={item.old_price} />
             ))}
           </div>
         </div>

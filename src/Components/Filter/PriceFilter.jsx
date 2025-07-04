@@ -51,7 +51,7 @@ export default function PriceFilter({ maxPrice, onFilter }) {
                 minStepsBetweenThumbs={1}
               >
                 <Slider.Track className="slider__track bg-moon-gray relative flex-auto">
-                  <Slider.Range className="slider__range bg-light-purple" />
+                  <Slider.Range className="slider__range bg-dark-blue" />
                 </Slider.Track>
                 <Slider.Thumb className="slider__thumb db w1 h1 bg-white br-100" />
                 <Slider.Thumb className="slider__thumb db w1 h1 bg-white br-100" />
