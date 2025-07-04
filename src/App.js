@@ -29,7 +29,7 @@ function App() {
 }
   return (
     <div>
-      <BrowserRouter basename="/E-commerceWebsite">
+      <BrowserRouter>
       <ScrollToTop />
       <Navbar/>
       <Routes>
