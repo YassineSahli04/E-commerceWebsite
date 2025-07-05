@@ -4,20 +4,29 @@ import PaymentInfo from "../Components/Checkout/PaymentInfo";
 import Confirmation from "../Components/Checkout/Confirmation";
 import { ShopContext } from "../Context/ShopContext";
 import CheckoutProgress from "../Components/Checkout/CheckoutProgress";
+import Review from "../Components/Checkout/Review";
+import CartItems from '../Components/CartItems/CartItems'
 
 
 export default function Checkout(){
     const [step, setStep] = useState(0);
     const { clearCart } = useContext(ShopContext);
 
-    function onCheckoutContinueClick(){
+    function handleCheckoutClicked(){
         setStep(1);
     } 
-    function onCheckoutPayClick(){
+
+    function onCheckoutContinueClick(){
         setStep(2);
     } 
+    function onCheckoutPayClick(){
+        setStep(3);
+    } 
+    function handleSubmitReview(){
+        setStep(4);
+    }
     useEffect(() => {
-        if(step === 2){
+        if(step === 4){
             clearCart();
         }
         
@@ -27,13 +36,20 @@ export default function Checkout(){
         <>
             <CheckoutProgress currentStep={step} />
             {step === 0 && (
-                <UserInfo handleContinueClick={onCheckoutContinueClick} />
+                <CartItems onCheckoutClicked={handleCheckoutClicked}/>
             )}
 
             {step === 1 && (
+                <UserInfo handleContinueClick={onCheckoutContinueClick} />
+            )}
+
+            {step === 2 && (
                 <PaymentInfo handlePayClick={onCheckoutPayClick}/>
             )}
-            {step === 2 && (
+            {step === 3 && (
+                <Review handleSubmitReview={handleSubmitReview}/>
+            )}
+            {step === 4 && (
                 <Confirmation />
             )}
         </>

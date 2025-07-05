@@ -1,7 +1,7 @@
 import './CheckoutProgress.css';
 
 export default function CheckoutProgress({ currentStep }) {
-  const steps = ['User Info', 'Payment', 'Confirmation'];
+  const steps = ['Checkout', 'User Informations', 'Payment','Review', 'Confirmation'];
 
   return (
     <div className="progress-container">

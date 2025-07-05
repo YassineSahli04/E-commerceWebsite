@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="nav-login-cart">
         <Link to='/login'><button>Log In</button></Link>
         <Link to='/signup'><button>Sign Up</button></Link>
-        <Link to='/cart'><img src={cart_icon} alt="Cart" /></Link>
+        <Link to='/checkout'><img src={cart_icon} alt="Cart" /></Link>
         <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
     </div>

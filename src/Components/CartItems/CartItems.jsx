@@ -2,13 +2,11 @@ import React, { useContext,  useState } from 'react';
 import './CartItems.css';
 import { ShopContext } from '../../Context/ShopContext';
 import remove_icon from '../Assets/cart_cross_icon.png';
-import { useNavigate } from 'react-router-dom';
 
-const CartItems = () => {
+export default function CartItems({onCheckoutClicked}){
   const { getTotalCartAmount, all_product, cartItems, removeFromCart, isCartEmpty } = useContext(ShopContext);
   const [promoCode, setPromoCode] = useState('');
   const [promoError, setPromoError] = useState('');
-  const navigate = useNavigate();
   
 
   const handlePromoCodeChange = (e) => {
@@ -23,7 +21,7 @@ const CartItems = () => {
 
   const handleCheckoutClick = () => {
     if (!isCartEmpty) {
-      navigate('/checkout');
+      onCheckoutClicked();
     }
   };
 
@@ -94,5 +92,3 @@ const CartItems = () => {
     </div>
   );
 };
-
-export default CartItems;

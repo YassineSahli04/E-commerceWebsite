@@ -83,7 +83,7 @@ const ProductDisplay = (props) => {
             <button onClick={() => { 
               addToCart(product.id)
               setIsDisabled(true);
-             }} disabled={isDisabled} aria-label={'add_to_cart'}>Add To Visits Cart</button> {'OR'}
+             }} disabled={isDisabled} aria-label={'add_to_cart'}>Add To Cart</button> {'OR'}
             <Link to='/contact'><button aria-label={'contact_artisan'}>Contact Seller</button></Link>
         </div>
         <div className='similar-products-section'>
